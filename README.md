@@ -1,2 +1,14 @@
 # fake-workload
-A Fake Workload Generator
+A fake workload generator.
+
+# How to build?
+
+```
+./build.sh
+```
+
+# How to run?
+
+```
+./build/workload/workload --help
+```
