@@ -284,7 +284,7 @@ namespace fakework
                 compute_time = ch::duration_cast<ch::microseconds>(t2 - t1).count();
 
                 double curr_cpu_util = (double) compute_time / (double) time_budget;
-                mul_factor = this->cpu_util / curr_cpu_util;
+                mul_factor = mul_factor * (this->cpu_util / curr_cpu_util);
                 mul_factor = std::max(1.0, mul_factor);
 
                 std::cout << time_budget << " " << compute_time << std::endl;
